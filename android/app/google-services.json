@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270573902154",
+    "project_id": "poeage-hub",
+    "storage_bucket": "poeage-hub.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270573902154:android:a7f2c8b4077e0bd02f49b3",
+        "android_client_info": {
+          "package_name": "com.poeage.hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzQMfBcpCqB6nhFuovW_Mte7EJL3vXBj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
