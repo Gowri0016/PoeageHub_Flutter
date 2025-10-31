@@ -12,6 +12,8 @@ import 'screens/auth/login_screen.dart';
 import 'configs/route_names.dart';
 import 'screens/auth/signup_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'screens/auth/dev_login_screen.dart';
 import 'screens/products/product_list_screen.dart';
 import 'screens/wishlist/wishlist_screen.dart';
 import 'screens/cart/cart_screen.dart';
@@ -23,7 +25,9 @@ import 'configs/app_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -50,9 +54,9 @@ class MyApp extends StatelessWidget {
         theme: lightTheme,
         initialRoute: RouteNames.home,
         routes: {
-          RouteNames.login: (context) => const LoginScreen(),
-          RouteNames.signup: (context) => const SignupScreen(),
-          RouteNames.home: (context) => const MainTabScreen(),
+          RouteNames.login: (context) => const DevLoginScreen(),
+          RouteNames.signup: (context) => const DevLoginScreen(),
+          RouteNames.home: (context) => const DevLoginScreen(),
           RouteNames.products: (context) => const ProductListScreen(),
           RouteNames.wishlist: (context) => const WishlistScreen(),
           RouteNames.cart: (context) => const CartScreen(),
@@ -60,7 +64,7 @@ class MyApp extends StatelessWidget {
           RouteNames.profile: (context) => const ProfileScreen(),
           RouteNames.myOrders: (context) => const MyOrdersScreen(),
         },
-        home: const MainTabScreen(),
+        home: const DevLoginScreen(),
       ),
     );
   }
