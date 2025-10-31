@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<AddressService>(create: (_) => AddressService()),
       ],
       child: MaterialApp(
-        title: 'PrimePick',
+        title: 'Poeage Hub',
         theme: lightTheme,
         initialRoute: RouteNames.home,
         routes: {

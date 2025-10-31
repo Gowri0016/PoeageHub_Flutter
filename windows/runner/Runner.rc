@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "primepick" "\0"
+            VALUE "FileDescription", "Poeage Hub" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "primepick" "\0"
+            VALUE "InternalName", "Poeage Hub" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "primepick.exe" "\0"
-            VALUE "ProductName", "primepick" "\0"
+            VALUE "OriginalFilename", "Poeage Hub.exe" "\0"
+            VALUE "ProductName", "Poeage Hub" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
