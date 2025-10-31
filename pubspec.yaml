@@ -101,12 +101,17 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
 # Configure flutter_launcher_icons
-flutter_icons:
+flutter_launcher_icons:
   android: true
   ios: true
   image_path: "assets/brand/logo.png" # Place your 1024x1024 icon here
   adaptive_icon_background: "#ffffff"
   adaptive_icon_foreground: "assets/brand/logo.png"
+  web:
+    generate: true
+    image_path: "assets/brand/logo.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
 
 # Configure flutter_native_splash
 flutter_native_splash:

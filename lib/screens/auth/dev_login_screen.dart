@@ -63,6 +63,29 @@ class _DevLoginScreenState extends State<DevLoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: 24),
+                  Center(
+                    child: Container(
+                      width: 84,
+                      height: 84,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color(0x338B5CF6),
+                            blurRadius: 28,
+                            spreadRadius: 2,
+                          ),
+                        ],
+                      ),
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/brand/logo.png',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
                   const Text(
                     'Poeage Hub',
                     textAlign: TextAlign.center,
@@ -85,6 +108,13 @@ class _DevLoginScreenState extends State<DevLoginScreen> {
                       color: const Color(0xFF121212),
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(color: const Color(0xFF222222)),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Color(0x66000000),
+                          blurRadius: 20,
+                          offset: Offset(0, 10),
+                        ),
+                      ],
                     ),
                     padding: const EdgeInsets.all(20),
                     child: Column(
@@ -97,6 +127,7 @@ class _DevLoginScreenState extends State<DevLoginScreen> {
                           decoration: InputDecoration(
                             labelText: 'Email',
                             labelStyle: const TextStyle(color: Colors.white70),
+                            prefixIcon: const Icon(Icons.email_outlined, color: Colors.white70),
                             filled: true,
                             fillColor: const Color(0xFF1A1A1A),
                             enabledBorder: OutlineInputBorder(
@@ -124,6 +155,7 @@ class _DevLoginScreenState extends State<DevLoginScreen> {
                           decoration: InputDecoration(
                             labelText: 'Password',
                             labelStyle: const TextStyle(color: Colors.white70),
+                            prefixIcon: const Icon(Icons.lock_outline, color: Colors.white70),
                             filled: true,
                             fillColor: const Color(0xFF1A1A1A),
                             enabledBorder: OutlineInputBorder(
